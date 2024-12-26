@@ -27,7 +27,6 @@ Route::get('/user', [UserController::class, 'index']);
 Route::get('/user/{user}', [UserController::class, 'show']);
 
 Route::get('/products', [ProductController::class, 'index']);
-Route::get('/products/{id}', [ProductController::class, 'show']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
